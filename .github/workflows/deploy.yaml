@@ -8,15 +8,15 @@ on:
 
 env:
   AWS_REGION: us-east-1                         # change to your region
-  ECR_REPOSITORY: xebia/my-node-app            # change to your ECR repo name
-  ECS_CLUSTER: victorious-flamingo-cub5ae           # change to your ECS cluster name
-  ECS_SERVICE: my-node-app-demo-d067           # change to your ECS service name
-  ECS_TASK_DEFINITION: victorious-flamingo-cub5ae-my-node-app-demo-d067
+  ECR_REPOSITORY: xebia/node-app            # change to your ECR repo name
+  ECS_CLUSTER: excellent-elephant-o9e3n8           # change to your ECS cluster name
+  ECS_SERVICE: node-app-f771           # change to your ECS service name
+  ECS_TASK_DEFINITION: excellent-elephant-o9e3n8-node-app-f771:2
   CONTAINER_NAME: Main          # must match name in your task definition
 
 jobs:
   # ─────────────────────────────────────────────
-  # JOB 1: Lint & Test
+  # JOB 1: Lint & Testg
   # Runs on every push and every PR
   # ─────────────────────────────────────────────
   lint-and-test:
